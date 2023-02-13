@@ -15,6 +15,20 @@
   color: white;
 }
 
+.unit {
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+  color: rgba(241, 241, 241, 0.856);
+}
+
+.unit a {
+  text-decoration: none;
+  color: rgb(214, 67, 111);
+}
+
 .Weather {
   max-width: 700px;
   border-radius: 20px;
