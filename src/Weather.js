@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
-import WeatherIcon from "./WeatherIcon";
 import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
@@ -60,7 +59,7 @@ export default function Weather(props) {
         <WeatherInfo data={weatherData} />
         <p className="footer">
           <a
-            href="https://github.com/sara-si/shecodesplus-project"
+            href="https://github.com/sara-si/react-weather-app"
             target="_blank"
             rel="noreferrer"
           >
@@ -72,6 +71,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "LoadingS";
+    return "Loading";
   }
 }
