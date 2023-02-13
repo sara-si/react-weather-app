@@ -1,0 +1,27 @@
+.forecast-weather {
+  border-radius: 20px;
+  margin-top: 40px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.forecast-day {
+  margin-left: 30px;
+  margin-bottom: -10px;
+}
+
+.forecast-temperature {
+  margin-left: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.forecast-temperature-min {
+  margin-left: 8px;
+  opacity: 0.6;
+}
+
+.forecast-icon {
+  padding: 20px 20px 4px 20px;
+}
