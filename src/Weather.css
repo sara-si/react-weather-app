@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:");
+
+.Weather {
+  max-width: 700px;
+  border-radius: 20px;
+  padding: 40px;
+  display: block;
+  margin: 80px auto 80px;
+  font-family: "Albert Sans", sans-serif;
+  height: 600px;
+  color: white;
+  background: linear-gradient(to bottom, #2f2653, #2a1f4f, #232347);
+  box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 20%);
+}
+
 .search-button {
   background: none;
   padding: 10px;
@@ -14,6 +29,19 @@
   background: rgb(0, 187, 203);
   color: white;
 }
+.search {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.Weather .search-city input {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 50px;
+  border: none;
+  color: white;
+  margin-top: 2px;
+}
 
 .unit {
   font-size: 20px;
@@ -29,24 +57,14 @@
   color: rgb(214, 67, 111);
 }
 
-.Weather {
-  max-width: 700px;
-  border-radius: 20px;
-  padding: 40px;
-  display: block;
-  margin: 80px auto 80px;
-  font-family: Arial, Helvetica, sans-serif;
-  height: 600px;
-  color: white;
-  background: linear-gradient(to bottom, #2f2653, #2a1f4f, #232347);
-  box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 20%);
+.unit a:hover {
+  color: rgb(157, 42, 76);
 }
 
 .city {
   margin-top: 20px;
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 0;
 }
 
 .time {
@@ -79,57 +97,21 @@
 .current-weather {
   align-items: center;
   display: flex;
+  margin-top: -20px;
 }
 
 .description {
   font-weight: bold;
   font-size: 20px;
   font-family: "Albert Sans", sans-serif;
-  margin-left: 22px;
+  padding-top: 10px;
   opacity: 0.8;
 }
-
 .icon {
-  margin-top: 20px;
+  margin-top: 45px;
+  margin-right: 20px;
 }
 
-.forecast-weather {
-  border-radius: 20px;
-  margin-top: 40px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.forecast-day {
-  margin-left: 35px;
-  margin-bottom: -10px;
-}
-
-.forecast-temperature {
-  margin-left: 24px;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 0;
-}
-
-.forecast-temperature-min {
-  margin-left: 8px;
-  opacity: 0.6;
-}
-
-.search {
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-input .search-city {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 10px;
-  border: none;
-  color: white;
-  margin-top: 2px;
-}
 .footer {
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
@@ -139,6 +121,7 @@ input .search-city {
 .footer a {
   color: rgb(0, 187, 203);
   text-decoration: none;
+  transition: all 2ms ease-in-out;
 }
 .footer a:hover {
   color: rgb(214, 67, 111);

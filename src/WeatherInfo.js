@@ -12,7 +12,7 @@ export default function WeatherInfo(props) {
           <span>, </span>
           <span>{props.data.country}</span>
         </div>
-        <div>
+        <div className="time">
           Last updated:{" "}
           <span>
             <FormattedDate date={props.data.date} />
@@ -31,10 +31,11 @@ export default function WeatherInfo(props) {
         <div className="current-weather">
           <div className="icon">
             <WeatherIcon code={props.data.icon} size={48} />
-            <div className="description">{props.data.description}</div>
           </div>
+
           <WeatherTemperature celsius={props.data.temperature} />
         </div>
+        <div className="description">{props.data.description}</div>
       </div>
     </section>
   );
