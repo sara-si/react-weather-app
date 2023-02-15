@@ -4,6 +4,7 @@ import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import Footer from "./Footer";
+import BeatLoader from "react-spinners/BeatLoader";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -65,6 +66,10 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading";
+    return (
+      <div className="Loading">
+        <BeatLoader color="#00bbcb" />
+      </div>
+    );
   }
 }

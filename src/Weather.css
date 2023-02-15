@@ -124,3 +124,15 @@ input[type="text"]:focus {
   margin-top: 45px;
   margin-right: 20px;
 }
+
+.Loading {
+  position: relative;
+  flex-flow: column wrap;
+  overflow: auto;
+  padding: 30px 20px;
+  display: flex;
+  -webkit-box-pack: center;
+  place-content: center;
+  place-items: center;
+  -webkit-box-align: center;
+}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./WeatherForecast.css";
 import axios from "axios";
 import WeatherForecastDay from "./WeatherForecastDay";
+import BeatLoader from "react-spinners/BeatLoader";
 
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
@@ -44,5 +45,10 @@ export default function WeatherForecast(props) {
     );
   } else {
     load();
+    return (
+      <div className="Loading">
+        <BeatLoader color="#00bbcb" />
+      </div>
+    );
   }
 }
