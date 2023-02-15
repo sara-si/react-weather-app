@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import Footer from "./Footer";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -47,7 +48,7 @@ export default function Weather(props) {
               <input
                 type="text"
                 placeholder="Enter a city..."
-                className="form-control search-city"
+                className="form-control search-input"
                 autoComplete="off"
                 onChange={handleCityChange}
               />
@@ -59,16 +60,7 @@ export default function Weather(props) {
         </form>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
-        <p className="footer">
-          <a
-            href="https://github.com/sara-si/react-weather-app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Open-source code
-          </a>{" "}
-          by Sara Sarabi
-        </p>
+        <Footer />
       </div>
     );
   } else {

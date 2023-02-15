@@ -1,0 +1,16 @@
+.footer {
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer a {
+  color: rgb(0, 187, 203);
+  text-decoration: none;
+  transition: all 2ms ease-in-out;
+}
+
+.footer a:hover {
+  color: rgb(214, 67, 111);
+}

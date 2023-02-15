@@ -29,18 +29,27 @@
   background: rgb(0, 187, 203);
   color: white;
 }
+
 .search {
   padding-top: 30px;
   padding-bottom: 10px;
 }
 
-.Weather .search-city input {
+.Weather .search-input {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  padding: 50px;
+  padding: 10px;
   border: none;
   color: white;
   margin-top: 2px;
+}
+
+input[type="text"]:focus {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 2px solid rgb(214, 67, 111);
 }
 
 .unit {
@@ -107,22 +116,11 @@
   padding-top: 10px;
   opacity: 0.8;
 }
+
+.description:first-letter {
+  text-transform: capitalize;
+}
 .icon {
   margin-top: 45px;
   margin-right: 20px;
-}
-
-.footer {
-  font-size: 14px;
-  font-family: "Courier New", Courier, monospace;
-  margin-top: 40px;
-  text-align: center;
-}
-.footer a {
-  color: rgb(0, 187, 203);
-  text-decoration: none;
-  transition: all 2ms ease-in-out;
-}
-.footer a:hover {
-  color: rgb(214, 67, 111);
 }
