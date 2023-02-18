@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:");
-
+:root {
+  --main-blue-color: rgb(0, 187, 203);
+  --main-pink-color: rgb(214, 67, 111);
+  --background-color: rgba(255, 255, 255, 0.1);
+  --text-color: rgba(241, 241, 241, 0.856);
+}
 .Weather {
   max-width: 700px;
   border-radius: 20px;
@@ -12,21 +16,20 @@
   background: linear-gradient(to bottom, #2f2653, #2a1f4f, #232347);
   box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 20%);
 }
-
 .search-button {
   background: none;
   padding: 10px;
   width: 120px;
   border-radius: 10px;
-  color: rgb(0, 187, 203);
+  color: var(--main-blue-color);
   font-size: 16px;
   font-family: "Albert Sans", sans-serif;
-  transition: ease-in 70ms;
-  border: 2px solid rgb(0, 187, 203);
+  transition: all ease-in 20ms;
+  border: 2px solid var(--main-blue-color);
 }
 .search-button:hover {
-  border: 2px solid rgb(0, 187, 203);
-  background: rgb(0, 187, 203);
+  border: 2px solid var(--main-blue-color);
+  background: var(--main-blue-color);
   color: white;
 }
 
@@ -36,20 +39,20 @@
 }
 
 .Weather .search-input {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--background-color);
   border-radius: 10px;
   padding: 10px;
-  border: none;
+  border: 2px solid var(--background-color);
   color: white;
   margin-top: 2px;
 }
 
 input[type="text"]:focus {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--background-color);
   color: white;
   -webkit-box-shadow: none;
   box-shadow: none;
-  outline: 2px solid rgb(214, 67, 111);
+  border: 2px solid var(--main-pink-color);
 }
 
 .unit {
@@ -58,12 +61,12 @@ input[type="text"]:focus {
   position: relative;
   line-height: 1;
   top: -34px;
-  color: rgba(241, 241, 241, 0.856);
+  color: var(--text-color);
 }
 
 .unit a {
   text-decoration: none;
-  color: rgb(214, 67, 111);
+  color: var(--main-pink-color);
 }
 
 .unit a:hover {
@@ -78,7 +81,7 @@ input[type="text"]:focus {
 
 .time {
   margin-left: 2px;
-  color: rgba(241, 241, 241, 0.856);
+  color: var(--text-color);
 }
 
 .list {
@@ -88,7 +91,7 @@ input[type="text"]:focus {
   margin-left: 2px;
   margin-top: 20px;
   font-size: 14px;
-  color: rgba(241, 241, 241, 0.856);
+  color: var(--text-color);
 }
 
 .temperature {
