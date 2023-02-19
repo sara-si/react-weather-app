@@ -1,5 +1,4 @@
 import React from "react";
-import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
@@ -13,10 +12,7 @@ export default function WeatherInfo(props) {
           <span>{props.data.country}</span>
         </div>
         <div className="time">
-          Last updated:{" "}
-          <span>
-            <FormattedDate date={props.data.date} />
-          </span>
+          <span>{props.date}</span>
         </div>
         <ul className="list">
           <li>
